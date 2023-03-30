@@ -1,8 +1,14 @@
-Hellow WORLDO
+<%= turbo_stream_from "mysample" %>
 
 
-<%=button_to "Update", first_page_path%>
+<div class="flex flex-col gap-4">
+    <span>Hellow WORLDO</span>
+    <%=button_to "Update", first_page_path, class: "btn-primary"%>
+    <%=button_to "StreamUpdate", second_page_path, class: "btn-primary"%>
+</div>
 
-<div id="container">
+<div id="container" class="bg-zinc-400">
+
+    <span>Container</span>
 
 </div>

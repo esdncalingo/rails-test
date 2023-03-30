@@ -25,6 +25,7 @@ class HomeController < ApplicationController
     end
 
     def second
+        Turbo::StreamsChannel.broadcast_update_to("mysample", target: "container", partial: "home/viewpartial")
     end
 
 end
